@@ -31,16 +31,7 @@ export default function Profile({navigation}) {
         setSession(true)
     }
 
-    // const pickPicture = () => {
-    //     ImagePicker.openPicker({
-    //       width: 300,
-    //       height: 400,
-    //       cropping: true,
-    //     }).then(image => {
-    //       setUri(image.path);
-    //       props.onChange?.(image);
-    //     });
-    //   };
+   
   return (
     <View style={styles.container}>
          <View style={{flexDirection:'row',justifyContent:'space-between',width:wp(100),height:hp(8)}}>
@@ -85,7 +76,6 @@ export default function Profile({navigation}) {
                         borderColor: '#5669FF',
                         borderWidth:1,
                         
-                        // paddingHorizontal:hp(8)
                         
                     }}>
                     <View style={{flexDirection:'column',alignItems:'center'}}>

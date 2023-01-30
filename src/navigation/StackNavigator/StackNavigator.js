@@ -17,6 +17,8 @@ import RegisterScreen from '../../screens/RegisterScreen';
 import SessionDetail from '../../screens/SessionDetail';
 import DrawerNavigator from '../../Drawer/DrawerNavigator';
 import ImagePicker from '../../component/ImagePicker';
+import Scanner from '../../screens/Qrcode';
+import TestScreen from '../../screens/TestScreen';
 const Stack = createNativeStackNavigator();
 
 
@@ -85,6 +87,11 @@ export default function StackNavigator() {
           component={SignInScreen}
           options={{headerShown: false}}
         />
+        <Stack.Screen
+          name="Scanner"
+          component={Scanner}
+          options={{headerShown: false}}
+        />
 
        
          <Stack.Screen
@@ -107,6 +114,12 @@ export default function StackNavigator() {
          <Stack.Screen
           name="DrawerNavigator"
           component={DrawerNavigator}
+          options={{headerShown: false}}
+        />
+
+         <Stack.Screen
+          name="TestScreen"
+          component={TestScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

@@ -336,7 +336,7 @@ const data=[
           </TouchableOpacity>
          </View>
          <View style={{width:wp(33)}}>
-          <TouchableOpacity onPress={()=>navigation.navigate('RegisterScreen')}>
+          <TouchableOpacity onPress={()=>navigation.navigate('Scanner')}>
             <View style={{zIndex:1,marginBottom:hp(12),width:wp(18),height:hp(9),backgroundColor:'white',borderRadius:hp(50)}}>
                <View style={{marginLeft:hp(0.4)}}>
                <Scaner name='qr-code-scanner' size={35} color='#1C2833' style={{marginLeft:hp(1.5)}}/>
@@ -348,7 +348,7 @@ const data=[
           </TouchableOpacity>
          </View>
          <View style={{width:wp(33)}}>
-          <TouchableOpacity onPress={()=>navigation.navigate('SpeakerList')}>
+          <TouchableOpacity onPress={()=>navigation.navigate('TestScreen')}>
             <View>
                <View style={{marginLeft:hp(1)}}>
                <Speker name='user' size={35} color='#1C2833'/>
